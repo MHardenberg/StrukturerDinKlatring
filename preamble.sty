@@ -1,0 +1,28 @@
+\usepackage{lipsum}
+\usepackage[T1]{fontenc}
+\usepackage[english]{babel}
+
+\usepackage{lmodern}
+\usepackage{geometry}
+\geometry{margin=2.5cm}
+\usepackage{setspace}
+\onehalfspacing
+
+\usepackage{multicol}
+\usepackage{enumitem}
+\pagenumbering{gobble}
+
+\newenvironment{mySection}[1]{
+\section*{\sc #1}}{\vspace{.25em}}
+\newenvironment{mySubsection}[1]{
+\subsection*{\sc #1}}{\vspace{.25em}}
+\newlist{_tList}{itemize}{1}
+\setlist[_tList]{label=$\triangleright$, leftmargin=2em}
+
+\newcommand{\tsection}[1]{\noindent \textbf{#1}
+  \vspace{.25em}\hrule width\columnwidth
+}
+
+\newenvironment{tList}[1]{\tsection{#1}  \raggedcolumns
+\begin{_tList}}{
+\end{_tList}\vspace{1em}}
