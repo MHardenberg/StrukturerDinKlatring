@@ -5,12 +5,30 @@
 \usepackage{lmodern}
 \usepackage{geometry}
 \geometry{margin=2.5cm}
+
+\usepackage[table]{xcolor}
 \usepackage{setspace}
 \onehalfspacing
 
 \usepackage{multicol}
 \usepackage{enumitem}
-\pagenumbering{gobble}
+\usepackage{graphicx}
+\usepackage{caption}
+
+%\usepackage{tgadventor} 
+\usepackage{newpxtext,newpxmath}
+%\usepackage{fourier}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\fancyhf{} % clear header and footer
+
+% Define header
+\fancyhead[L]{\textbf{Strukturer din Klatring}} % Left side
+\fancyhead[R]{\AA (a)rhus Klarteklub 2025}  % Right side
+\fancyfoot[C]{\thepage} % page number in center
+\renewcommand{\headrulewidth}{0.4pt} % header line
+\renewcommand{\footrulewidth}{0pt}   % no footer line
 
 \newenvironment{mySection}[1]{
 \section*{\sc #1}}{\vspace{.25em}}
@@ -20,7 +38,7 @@
 \setlist[_tList]{label=$\triangleright$, leftmargin=2em}
 
 \newcommand{\tsection}[1]{\noindent \textbf{#1}
-  \vspace{.25em}\hrule width\columnwidth
+  \vspace{.25em}\hrule width\columnwidth \vspace{.25em}
 }
 
 \newenvironment{tList}[1]{\tsection{#1}  \raggedcolumns

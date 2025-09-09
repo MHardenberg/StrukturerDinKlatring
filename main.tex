@@ -1,14 +1,21 @@
 \documentclass[12pt,a4paper]{article}
 \usepackage{preamble}
 
-\title{\textbf{Training Handout Title}}
-\author{Instructor Name}
+\title{\sc Strukturer Din Klatring}
+\author{Emil Lassen}
 \date{\today}
 
-
 \begin{document}
+\pagenumbering{gobble}
+\maketitle
+\vfill
+\begin{figure}[h!]
+  \raggedleft
+  \includegraphics[width=.6\textwidth]{figs/aak}
+\end{figure}
+\clearpage
 
-
+\pagenumbering{arabic}
 \input{sec_plan}
 \clearpage
 
@@ -18,11 +25,9 @@
 \input{sec_maintainance}
 \clearpage
 
-\input{body}
-
+\input{sec_training}
 \clearpage
-\input{hangboard}
 
+\input{sec_hangboard}
 
 \end{document}
-
